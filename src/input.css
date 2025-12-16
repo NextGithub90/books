@@ -67,6 +67,13 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Contoh Manual Media Query untuk Mobile (Max-width 768px) */
+  @media (max-width: 768px) {
+    html {
+      width: 576px !important;
+    }
+  }
 }
 
 @layer base {
