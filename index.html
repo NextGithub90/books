@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="isClass - Platform Belajar Modern untuk Creator">
+    <title>isClass - Glamorous Learning Platform</title>
+
+    <!-- Custom CSS (Tailwind Compiled) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="antialiased selection:bg-purple-500 selection:text-white">
+
+    <!-- Background Blobs -->
+    <div class="blob bg-purple-600 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="blob bg-pink-600 w-80 h-80 rounded-full top-1/3 right-0 translate-x-1/3"></div>
+    <div class="blob bg-blue-600 w-96 h-96 rounded-full bottom-0 left-1/3 opacity-20"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/10 bg-black/50 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-purple-400 text-4xl">diamond</span>
+                    <span class="font-bold text-2xl tracking-tighter">isClass</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="hover:text-purple-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#curriculum"
+                            class="hover:text-purple-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Curriculum</a>
+                        <a href="#mentor"
+                            class="hover:text-purple-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Mentor</a>
+                        <a href="#pricing"
+                            class="bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full text-sm font-medium transition-all">Join
+                            Now</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 animate-fade-in-up">
+                <span class="flex h-2 w-2 rounded-full bg-green-400"></span>
+                <span class="text-sm font-medium text-gray-300">New Batch Open for 2025</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Master the Art of <br>
+                <span class="text-gradient">Content Creation & AI</span>
+            </h1>
+
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 mb-10">
+                Strategi Cukup Dari Ngonten Pake A.I. Diajarin Bikin Konten ➔ Viral ➔ Dapetin Followers ➔ Jualan Produk
+                / Jasa ➔ Cuan ➔ Otomatisasi Pake A.I
+            </p>
+
+            <div class="flex justify-center gap-4 mb-16">
+                <a href="#pricing"
+                    class="btn-gradient px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2">
+                    Join Waitlist
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+                <a href="#video-teaser"
+                    class="px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:bg-white/10 transition-all flex items-center gap-2">
+                    <span class="material-symbols-outlined">play_circle</span>
+                    Watch Teaser
+                </a>
+            </div>
+
+            <!-- Video Teaser Container -->
+            <div
+                class="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-purple-900/50 border border-white/10 group">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-900 relative">
+                    <!-- Placeholder for Video -->
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-gradient-to-tr from-purple-900/40 to-black">
+                        <span
+                            class="material-symbols-outlined text-7xl text-white/50 group-hover:text-white group-hover:scale-110 transition-all duration-300 cursor-pointer">play_circle</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1626544827763-d516dce335ca?q=80&w=1200&auto=format&fit=crop"
+                        alt="Video Thumbnail" class="object-cover w-full h-full opacity-60 mix-blend-overlay">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Stats -->
+    <section class="py-12 border-y border-white/5 bg-white/5 backdrop-blur-sm reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-semibold text-gray-400 tracking-widest uppercase mb-8">Trusted by Creators from</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Mock Logos -->
+                <div class="text-2xl font-bold font-serif">TIKTOK</div>
+                <div class="text-2xl font-bold font-sans">INSTAGRAM</div>
+                <div class="text-2xl font-bold font-mono">YOUTUBE</div>
+                <div class="text-2xl font-bold italic">LINKEDIN</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="p-6 reveal">
+                    <div class="text-4xl font-bold text-white mb-2">10M+</div>
+                    <div class="text-purple-400 text-sm font-medium uppercase tracking-wider">Total Views Generated
+                    </div>
+                </div>
+                <div class="p-6 border-x border-white/10 reveal">
+                    <div class="text-4xl font-bold text-white mb-2">500k+</div>
+                    <div class="text-purple-400 text-sm font-medium uppercase tracking-wider">Followers Gained</div>
+                </div>
+                <div class="p-6 reveal">
+                    <div class="text-4xl font-bold text-white mb-2">#1</div>
+                    <div class="text-purple-400 text-sm font-medium uppercase tracking-wider">AI Content Community</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience (Pain Points) -->
+    <section class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Pastikan Inkubator Ini <br> <span
+                        class="text-purple-500">Cocok Untuk Kamu</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Jangan buang waktu jika ini bukan tempatmu. Kami hanya
+                    mencari mereka yang serius ingin bertumbuh.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 reveal">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-purple-400 text-3xl">school</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Untuk Pemula</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Bingung mulai dari mana? Kami sediakan roadmap lengkap dari 0. Tidak perlu skill editing dewa
+                        atau kamera mahal.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 border-purple-500/30 shadow-[0_0_30px_rgba(168,85,247,0.15)] reveal">
+                    <div class="w-14 h-14 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-pink-400 text-3xl">rocket_launch</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Untuk Kreator</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Sudah ngonten tapi stuck? Pelajari cara scale-up views dan followers menggunakan strategi AI
+                        yang belum banyak diketahui.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300 reveal">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-blue-400 text-3xl">smart_toy</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Untuk AI Enthusiast</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Eksplorasi tools AI terbaru untuk efisiensi kerja. Dari script writing hingga auto-editing,
+                        semua dibahas tuntas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology (How it Works) -->
+    <section class="py-24 bg-black/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative reveal">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-lg opacity-30">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop"
+                        alt="Methodology" class="relative rounded-2xl shadow-2xl border border-white/10">
+                </div>
+
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ini Cara Kami <br> <span
+                            class="text-gradient">Mengajarkannya</span></h2>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-900/50 flex items-center justify-center border border-purple-500/30 text-purple-400 font-bold">
+                                1</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Riset Ide Konten Berbasis Data</h4>
+                                <p class="text-gray-400 text-sm">Tidak ada lagi "tebak-tebakan". Gunakan AI untuk
+                                    menemukan topik yang sedang viral.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-900/50 flex items-center justify-center border border-purple-500/30 text-purple-400 font-bold">
+                                2</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Power Script & Hook Strategy</h4>
+                                <p class="text-gray-400 text-sm">Formula copywriting yang menahan audiens menonton
+                                    sampai habis.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-900/50 flex items-center justify-center border border-purple-500/30 text-purple-400 font-bold">
+                                3</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Produksi Cepat dengan AI</h4>
+                                <p class="text-gray-400 text-sm">Edit video 10x lebih cepat dengan tools otomatisasi
+                                    terbaru.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-900/50 flex items-center justify-center border border-purple-500/30 text-purple-400 font-bold">
+                                4</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Monetisasi & Funneling</h4>
+                                <p class="text-gray-400 text-sm">Ubah views menjadi uang. Strategi jualan soft-selling
+                                    yang elegan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-pink-500 font-bold tracking-wider text-sm uppercase">Limited Offer</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-2">Kalian Juga Akan <br> Mendapatkan <span
+                        class="text-gradient">Bonus Eksklusif</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Bonus Card 1 -->
+                <div class="glass-card p-1 rounded-2xl group reveal">
+                    <div class="bg-gray-900/50 p-6 rounded-xl h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-pink-600 text-xs font-bold px-3 py-1 rounded-bl-xl">FREE
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-yellow-400 mb-4">folder_special</span>
+                        <h4 class="font-bold text-lg mb-2">300+ Template Prompt AI</h4>
+                        <p class="text-gray-400 text-sm">Copy-paste prompt siap pakai untuk ChatGPT & Midjourney.</p>
+                    </div>
+                </div>
+                <!-- Bonus Card 2 -->
+                <div class="glass-card p-1 rounded-2xl group reveal">
+                    <div class="bg-gray-900/50 p-6 rounded-xl h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-pink-600 text-xs font-bold px-3 py-1 rounded-bl-xl">FREE
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-blue-400 mb-4">group_add</span>
+                        <h4 class="font-bold text-lg mb-2">Akses Komunitas VIP</h4>
+                        <p class="text-gray-400 text-sm">Networking dengan kreator top dan info project cuan.</p>
+                    </div>
+                </div>
+                <!-- Bonus Card 3 -->
+                <div class="glass-card p-1 rounded-2xl group reveal">
+                    <div class="bg-gray-900/50 p-6 rounded-xl h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-pink-600 text-xs font-bold px-3 py-1 rounded-bl-xl">FREE
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-green-400 mb-4">payments</span>
+                        <h4 class="font-bold text-lg mb-2">E-Book "0 to 10k"</h4>
+                        <p class="text-gray-400 text-sm">Panduan tertulis strategi growth hacking media sosial.</p>
+                    </div>
+                </div>
+                <!-- Bonus Card 4 -->
+                <div class="glass-card p-1 rounded-2xl group reveal">
+                    <div class="bg-gray-900/50 p-6 rounded-xl h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-pink-600 text-xs font-bold px-3 py-1 rounded-bl-xl">FREE
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-purple-400 mb-4">videocam</span>
+                        <h4 class="font-bold text-lg mb-2">Live Review Akun</h4>
+                        <p class="text-gray-400 text-sm">Sesi bedah akun bulanan langsung dengan mentor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition (Why Us) -->
+    <section class="py-24 relative overflow-hidden">
+        <!-- Central Vertical Line (Desktop Only) -->
+        <div
+            class="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-purple-500/50 to-transparent transform -translate-x-1/2 hidden md:block">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-24 reveal">Kenapa Harus <br> <span
+                    class="text-gradient">isClass Incubator?</span></h2>
+
+            <div class="space-y-24">
+                <!-- Why Item 1 -->
+                <div class="relative grid md:grid-cols-2 gap-8 items-center group reveal">
+                    <!-- Number Marker (Absolute Center) -->
+                    <div
+                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-black border border-purple-500/50 rounded-lg flex items-center justify-center z-10 hidden md:flex shadow-[0_0_15px_rgba(168,85,247,0.5)] group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-purple-400 font-bold">01</span>
+                    </div>
+
+                    <!-- Content Left -->
+                    <div class="md:text-right md:pr-16 order-2 md:order-1">
+                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-purple-400 transition-colors">
+                            <span class="md:hidden text-purple-400 mr-2">01.</span>
+                            Akses Lifetime & Update Gratis
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Paling tidak enak itu ketika baru mulai belajar tapi akses kelasnya sudah habis. Di sini,
+                            bayar sekali untuk akses selamanya, termasuk jika ada update materi AI terbaru di masa
+                            depan.
+                        </p>
+                    </div>
+
+                    <!-- Visual Right -->
+                    <div class="md:pl-16 order-1 md:order-2 flex justify-center md:justify-start">
+                        <div
+                            class="glass-card w-full max-w-sm aspect-video rounded-2xl flex items-center justify-center p-8 relative overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] border-purple-500/30">
+                            <div class="absolute inset-0 bg-purple-600/10"></div>
+                            <span
+                                class="material-symbols-outlined text-purple-400 text-7xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">all_inclusive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Item 2 -->
+                <div class="relative grid md:grid-cols-2 gap-8 items-center group reveal">
+                    <!-- Number Marker -->
+                    <div
+                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-black border border-pink-500/50 rounded-lg flex items-center justify-center z-10 hidden md:flex shadow-[0_0_15px_rgba(236,72,153,0.5)] group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-pink-400 font-bold">02</span>
+                    </div>
+
+                    <!-- Visual Left -->
+                    <div class="md:pr-16 order-1 flex justify-center md:justify-end">
+                        <div
+                            class="glass-card w-full max-w-sm aspect-video rounded-2xl flex items-center justify-center p-8 relative overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.3)] border-pink-500/30">
+                            <div class="absolute inset-0 bg-pink-600/10"></div>
+                            <span
+                                class="material-symbols-outlined text-pink-400 text-7xl transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3">devices</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Right -->
+                    <div class="md:pl-16 order-2 md:text-left">
+                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-pink-400 transition-colors">
+                            <span class="md:hidden text-pink-400 mr-2">02.</span>
+                            Tidak Perlu Alat Mahal
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Banyak yang mengira jadi kreator butuh kamera mahal dan PC spek dewa. Kami tawarkan solusi
+                            berbasis AI yang bisa dijalankan bahkan dari HP kentang sekalipun.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Why Item 3 -->
+                <div class="relative grid md:grid-cols-2 gap-8 items-center group reveal">
+                    <!-- Number Marker -->
+                    <div
+                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-black border border-blue-500/50 rounded-lg flex items-center justify-center z-10 hidden md:flex shadow-[0_0_15px_rgba(59,130,246,0.5)] group-hover:scale-110 transition-transform duration-300">
+                        <span class="text-blue-400 font-bold">03</span>
+                    </div>
+
+                    <!-- Content Left -->
+                    <div class="md:text-right md:pr-16 order-2 md:order-1">
+                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-blue-400 transition-colors">
+                            <span class="md:hidden text-blue-400 mr-2">03.</span>
+                            Dibimbing Dari Nol
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Modul kami dirancang untuk pemula total. Kami tidak menggunakan istilah rumit yang
+                            membingungkan. Step-by-step tutorial yang mudah diikuti siapa saja.
+                        </p>
+                    </div>
+
+                    <!-- Visual Right -->
+                    <div class="md:pl-16 order-1 md:order-2 flex justify-center md:justify-start">
+                        <div
+                            class="glass-card w-full max-w-sm aspect-video rounded-2xl flex items-center justify-center p-8 relative overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] border-blue-500/30">
+                            <div class="absolute inset-0 bg-blue-600/10"></div>
+                            <span
+                                class="material-symbols-outlined text-blue-400 text-7xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">stairs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-16 reveal">Kata Mereka Yang <br> Sudah <span
+                    class="text-green-400">Berhasil</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="glass-card p-8 rounded-3xl relative reveal">
+                    <span
+                        class="material-symbols-outlined text-6xl text-white/10 absolute top-4 right-4">format_quote</span>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="User"
+                            class="w-12 h-12 rounded-full border-2 border-purple-500">
+                        <div>
+                            <h4 class="font-bold">Cindy C.</h4>
+                            <p class="text-xs text-gray-400">Content Creator (150k+ Followers)</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Awalnya gaptek banget sama AI. Tapi di isClass diajarin bener-bener
+                        dari dasar. Sekarang bikin 1 konten cuma butuh 15 menit!"</p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-8 rounded-3xl relative bg-white/10 border-purple-500/50 reveal">
+                    <span
+                        class="material-symbols-outlined text-6xl text-white/10 absolute top-4 right-4">format_quote</span>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="User"
+                            class="w-12 h-12 rounded-full border-2 border-purple-500">
+                        <div>
+                            <h4 class="font-bold">Rizky M.</h4>
+                            <p class="text-xs text-gray-400">Business Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Omzet jualan naik 300% gara-gara konten fyp terus. Teknik hook-nya
+                        daging banget. Investasi leher ke atas terbaik tahun ini."</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-8 rounded-3xl relative reveal">
+                    <span
+                        class="material-symbols-outlined text-6xl text-white/10 absolute top-4 right-4">format_quote</span>
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/150?img=53" alt="User"
+                            class="w-12 h-12 rounded-full border-2 border-purple-500">
+                        <div>
+                            <h4 class="font-bold">Aldi S.</h4>
+                            <p class="text-xs text-gray-400">Freelancer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Komunitasnya gila sih, supportive banget. Ga cuma dapet ilmu, tapi
+                        dapet network dan job editing dari sini."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Investasi Terbaik Untuk <br> <span
+                        class="text-gradient">Masa Depanmu</span></h2>
+                <p class="text-gray-400">Harga akan naik setelah slot batch ini penuh.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
+                <!-- Basic Plan -->
+                <div class="glass-card rounded-3xl p-8 border-white/10 reveal">
+                    <h3 class="text-xl font-bold text-gray-400 mb-2">Starter</h3>
+                    <div class="text-3xl font-bold mb-6">Rp 199.000</div>
+                    <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Akses 20+
+                            Video Materi</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Grup
+                            Telegram Umum</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-gray-600 text-lg">cancel</span> Live Mentoring
+                        </li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-gray-600 text-lg">cancel</span> Bedah Akun</li>
+                    </ul>
+                    <button
+                        class="w-full py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-colors font-bold">Choose
+                        Starter</button>
+                </div>
+
+                <!-- Pro Plan (Popular) -->
+                <div
+                    class="glass-card rounded-3xl p-8 border-purple-500 relative transform md:-translate-y-4 bg-purple-900/20 reveal">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-1 rounded-full text-xs font-bold tracking-wider">
+                        BEST VALUE</div>
+                    <h3 class="text-xl font-bold text-purple-400 mb-2">Creator Pro</h3>
+                    <div class="text-4xl font-bold mb-6">Rp 499.000</div>
+                    <ul class="space-y-4 mb-8 text-sm text-gray-200">
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Akses 50+
+                            Video Materi</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Komunitas
+                            VIP Discord</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> 1x Live
+                            Mentoring / Bulan</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Bonus 300+
+                            Prompt AI</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-xl btn-gradient font-bold shadow-lg shadow-purple-900/50">Join
+                        Creator Pro</button>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="glass-card rounded-3xl p-8 border-white/10 reveal">
+                    <h3 class="text-xl font-bold text-yellow-400 mb-2">Mentorship</h3>
+                    <div class="text-3xl font-bold mb-6">Rp 1.999.000</div>
+                    <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Semua Fitur
+                            Pro</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> 1-on-1
+                            Mentoring (4x)</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Personal
+                            Brand Audit</li>
+                        <li class="flex gap-2"><span
+                                class="material-symbols-outlined text-green-400 text-lg">check_circle</span> Jaminan Job
+                            Connector</li>
+                    </ul>
+                    <button
+                        class="w-full py-3 rounded-xl border border-white/20 hover:bg-white/10 transition-colors font-bold">Apply
+                        Mentorship</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Profile -->
+    <section id="mentor" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 md:p-16 overflow-hidden relative reveal">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-purple-600 blur-[100px] opacity-20 pointer-events-none">
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12 relative z-10">
+                    <div class="w-full md:w-1/3">
+                        <div
+                            class="aspect-w-3 aspect-h-4 rounded-2xl overflow-hidden border-2 border-white/10 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
+                                alt="Mentor" class="object-cover w-full h-full">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 text-left">
+                        <h2 class="text-3xl md:text-5xl font-bold mb-6">Let's Start and <br> Grow Together</h2>
+                        <h3 class="text-2xl font-semibold text-purple-400 mb-4">I Made Puja Endra</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            "Saya percaya setiap orang punya potensi untuk menjadi kreator yang berdampak. Dengan
+                            bantuan AI, hambatan teknis yang dulu ada sekarang hilang. Misi saya adalah membantu 10.000
+                            orang Indonesia melek teknologi dan menghasilkan karya yang dihargai dunia."
+                        </p>
+                        <div class="flex gap-8">
+                            <div>
+                                <div class="text-3xl font-bold text-white">5th+</div>
+                                <div class="text-xs text-gray-400 uppercase">Experience</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-white">50k+</div>
+                                <div class="text-xs text-gray-400 uppercase">Students</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-black/40">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked <br> Questions</h2>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full px-6 py-4 text-left flex justify-between items-center bg-white/5 hover:bg-white/10 transition-colors focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="font-semibold">Apakah cocok untuk pemula yang belum pernah ngonten?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div
+                        class="px-6 py-0 h-0 overflow-hidden transition-all duration-300 ease-in-out bg-black/20 text-gray-400 text-sm">
+                        <div class="py-4">
+                            Sangat cocok! Materi kami disusun dari level fundamental (mindset, cara kerja algoritma)
+                            hingga teknis tingkat lanjut. Kami menggunakan bahasa yang mudah dipahami orang awam.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full px-6 py-4 text-left flex justify-between items-center bg-white/5 hover:bg-white/10 transition-colors focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="font-semibold">Apakah butuh laptop spek tinggi?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div
+                        class="px-6 py-0 h-0 overflow-hidden transition-all duration-300 ease-in-out bg-black/20 text-gray-400 text-sm">
+                        <div class="py-4">
+                            Tidak wajib. Sebagian besar tools AI yang kami ajarkan berbasis cloud (web browser), jadi
+                            bisa diakses dari laptop standar atau bahkan smartphone/tablet.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full px-6 py-4 text-left flex justify-between items-center bg-white/5 hover:bg-white/10 transition-colors focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="font-semibold">Apakah aksesnya seumur hidup?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div
+                        class="px-6 py-0 h-0 overflow-hidden transition-all duration-300 ease-in-out bg-black/20 text-gray-400 text-sm">
+                        <div class="py-4">
+                            Ya, sekali bayar untuk akses selamanya (Lifetime Access) termasuk update materi di masa
+                            depan tanpa biaya tambahan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="material-symbols-outlined text-purple-400 text-3xl">diamond</span>
+                        <span class="font-bold text-2xl tracking-tighter">isClass</span>
+                    </div>
+                    <p class="text-gray-500 text-sm max-w-sm">
+                        Platform edukasi konten kreator berbasis AI nomor #1 di Indonesia. Membantu kamu tumbuh dan
+                        menghasilkan dari sosial media.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Connect</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">TikTok</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">YouTube</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 text-xs text-center md:text-left">© 2025 isClass Inc. All rights reserved.</p>
+                <p class="text-gray-600 text-xs flex items-center gap-1">Made with <span
+                        class="material-symbols-outlined text-[14px] text-red-500">favorite</span> in Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
