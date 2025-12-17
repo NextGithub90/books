@@ -475,6 +475,10 @@
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .translate-z-0 {
+    --tw-translate-z: calc(var(--spacing) * 0);
+    translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
+  }
   .scale-105 {
     --tw-scale-x: 105%;
     --tw-scale-y: 105%;
