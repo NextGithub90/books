@@ -15,6 +15,25 @@ function toggleFAQ(button) {
   }
 }
 
+// Mobile Menu Toggle Logic
+function toggleMobileMenu() {
+  const menu = document.getElementById("mobile-menu");
+  const button = document.querySelector("[aria-controls='mobile-menu']");
+  const icon = button.querySelector(".material-symbols-outlined");
+
+  const isHidden = menu.classList.contains("hidden");
+
+  if (isHidden) {
+    menu.classList.remove("hidden");
+    button.setAttribute("aria-expanded", "true");
+    icon.textContent = "close";
+  } else {
+    menu.classList.add("hidden");
+    button.setAttribute("aria-expanded", "false");
+    icon.textContent = "menu";
+  }
+}
+
 // Scroll Animation Observer
 document.addEventListener("DOMContentLoaded", () => {
   const observerOptions = {

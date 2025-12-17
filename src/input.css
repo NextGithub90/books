@@ -68,12 +68,8 @@
     transform: translateY(0);
   }
 
-  /* Contoh Manual Media Query untuk Mobile (Max-width 768px) */
-  @media (max-width: 768px) {
-    html {
-      width: 576px !important;
-    }
-  }
+  /* Contoh Manual Media Query untuk Mobile (Max-width 768px)
+     Biarkan kosong; gunakan utilitas Tailwind (mobile-first) untuk responsif */
 }
 
 @layer base {
