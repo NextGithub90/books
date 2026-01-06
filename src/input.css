@@ -32,21 +32,64 @@
   }
 
   .text-gradient {
-    background: linear-gradient(to right, #c084fc, #e879f9);
+    background: linear-gradient(135deg, #c084fc 0%, #e879f9 50%, #f472b6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
   .btn-gradient {
-    background: linear-gradient(90deg, #7e22ce 0%, #a855f7 100%);
-    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #7e22ce 0%, #a855f7 50%, #c026d3 100%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .btn-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #a855f7 0%, #c026d3 50%, #e879f9 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+
+  .btn-gradient:hover::before {
+    opacity: 1;
   }
 
   .btn-gradient:hover {
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
-    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.6), 0 0 80px rgba(192, 38, 211, 0.3);
+    transform: translateY(-3px) scale(1.02);
+  }
+
+  .btn-gradient > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-daftar {
+    position: relative;
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(168, 85, 247, 0.3), 0 4px 15px rgba(168, 85, 247, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.5), 0 4px 25px rgba(168, 85, 247, 0.4);
+    }
   }
 
   .blob {
@@ -78,4 +121,35 @@
     color: #ffffff;
     overflow-x: hidden;
   }
+}
+
+/* Custom Animations */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 30s linear infinite;
+}
+
+.pl-13 {
+  padding-left: 3.25rem;
 }
